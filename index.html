@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR Perfumes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #25D366;
+        }
+
+        .banner {
+            background: url('imagens/banner.jpg') no-repeat center;
+            background-size: cover;
+            height: 300px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produtos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .produto {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .produto:hover {
+            transform: scale(1.05);
+        }
+
+        .produto img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .botao:hover {
+            background-color: #444;
+        }
+
+        .whatsapp {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .produto {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>LR Perfumes</h1>
+    <p>Os melhores perfumes importados</p>
+</header>
+
+<nav>
+    <a href="#">Início</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="banner"></div>
+
+<div class="container" id="produtos">
+    <h2>Nossos Perfumes</h2>
+
+    <div class="produtos-grid">
+
+        <div class="produto">
+            <img src="imagens/perfume1.jpg" alt="Perfume 1">
+            <h3>Perfume Importado 1</h3>
+            <p>R$ 199,90</p>
+            <a href="#" class="botao">Ver Detalhes</a>
+            <a href="https://wa.me/5534996888419?text=Olá,%20tenho%20interesse%20no%20Perfume%201" class="whatsapp">
+                Comprar no WhatsApp
+            </a>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/perfume2.jpg" alt="Perfume 2">
+            <h3>Perfume Importado 2</h3>
+            <p>R$ 300,90</p>
+            <a href="#" class="botao">Ver Detalhes</a>
+            <a href="https://wa.me/5534996888419?text=Olá,%20tenho%20interesse%20no%20Perfume%202" class="whatsapp">
+                Comprar no WhatsApp
+            </a>
+        </div>
+
+        <div class="produto">
+            <img src="imagens/perfume3.jpg" alt="Perfume 3">
+            <h3>Perfume Importado 3</h3>
+            <p>R$ 299,90</p>
+            <a href="#" class="botao">Ver Detalhes</a>
+            <a href="https://wa.me/5534996888419?text=Olá,%20tenho%20interesse%20no%20Perfume%203" class="whatsapp">
+                Comprar no WhatsApp
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato pelo WhatsApp para fazer seu pedido!</p>
+
+    <a href="https://wa.me/5534996888419" class="whatsapp">
+        Falar no WhatsApp
+    </a>
+</div>
+
+<footer>
+    <p>© 2026 LR Perfumes - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
